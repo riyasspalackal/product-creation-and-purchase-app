@@ -16,12 +16,13 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    // return Inertia::render('Welcome', [
+    //     'canLogin' => Route::has('login'),
+    //     'canRegister' => Route::has('register'),
+    //     'laravelVersion' => Application::VERSION,
+    //     'phpVersion' => PHP_VERSION,
+    // ]);
+    return Inertia::render('Auth/Login');
 });
 
 Route::middleware([
@@ -32,4 +33,12 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
+
+    Route::get('/products', function () {
+        return Inertia::render('Products');
+    })->name('products');
+
+    Route::post('/create-products', 'App\Http\Controllers\ProductController@create')->name('product-creation');
+    Route::get('/get-products', 'App\Http\Controllers\ProductController@show')->name('product-list');
+    Route::delete('/delete-products/{productId}', 'App\Http\Controllers\ProductController@delete')->name('product-delete');
 });
