@@ -52,16 +52,27 @@ const logout = () => {
               </div>
 
               <!-- Navigation Links -->
-              <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+              <div
+                v-if="$page.props.user.user_type_id == 1"
+                class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex"
+              >
                 <NavLink
                   :href="route('dashboard')"
                   :active="route().current('dashboard')"
                 >
-                  Dashboard
+                  Order Managements
                 </NavLink>
                 <NavLink
                   :href="route('products')"
                   :active="route().current('products')"
+                >
+                  Products Managements
+                </NavLink>
+              </div>
+              <div v-else class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <NavLink
+                  :href="route('dashboard')"
+                  :active="route().current('dashboard')"
                 >
                   Products
                 </NavLink>
