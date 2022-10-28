@@ -38,7 +38,18 @@ Route::middleware([
         return Inertia::render('Products');
     })->name('products');
 
+    Route::get('/user-created-orders', function () {
+        return Inertia::render('UserCreatedOrders');
+    })->name('user-created-orders');
+
     Route::post('/create-products', 'App\Http\Controllers\ProductController@create')->name('product-creation');
     Route::get('/get-products', 'App\Http\Controllers\ProductController@show')->name('product-list');
     Route::delete('/delete-products/{productId}', 'App\Http\Controllers\ProductController@delete')->name('product-delete');
+
+    Route::post('/create-order', 'App\Http\Controllers\OrderController@createOrder')->name('create-order');
+    Route::get('/get-user-orders', 'App\Http\Controllers\OrderController@getOrderByUser')->name('order-list-by-user');
+    Route::post('/pay', 'App\Http\Controllers\OrderController@pay')->name('payment');
+    Route::get('/get-all-orders', 'App\Http\Controllers\OrderController@getOrders')->name('order-list-by-user');
+    Route::get('/get-all-orders', 'App\Http\Controllers\OrderController@getOrders')->name('order-list-by-user');
+    Route::get('/transaction-history/{transactionId}', 'App\Http\Controllers\OrderController@getTransactionHistory')->name('order-list-by-user');
 });

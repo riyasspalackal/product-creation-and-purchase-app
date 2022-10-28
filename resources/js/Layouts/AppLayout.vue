@@ -60,7 +60,7 @@ const logout = () => {
                   :href="route('dashboard')"
                   :active="route().current('dashboard')"
                 >
-                  Order Managements
+                  Dashboard
                 </NavLink>
                 <NavLink
                   :href="route('products')"
@@ -74,7 +74,13 @@ const logout = () => {
                   :href="route('dashboard')"
                   :active="route().current('dashboard')"
                 >
-                  Products
+                  Dashboard
+                </NavLink>
+                <NavLink
+                  :href="route('user-created-orders')"
+                  :active="route().current('user-created-orders')"
+                >
+                  Created Orders
                 </NavLink>
               </div>
             </div>

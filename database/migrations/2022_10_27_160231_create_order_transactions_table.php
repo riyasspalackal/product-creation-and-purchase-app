@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('order_transactions', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('order_id')->unsigned()->index();
+            $table->string('transaction_id', 60)->nullable()->index();
             $table->double('amount', 10, 2)->default(0.00);
             $table->string('payment_type', 60)->nullable()->index();
             $table->bigInteger('created_by')->nullable()->unsigned()->index();
