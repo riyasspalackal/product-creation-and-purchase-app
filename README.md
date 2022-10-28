@@ -62,3 +62,19 @@ And in another terminal window we need to run the below:
 -   POST Payment `http://127.0.0.1:8000/pay`
 -   GET All orders `http://127.0.0.1:8000/get-all-orders`
 -   GET Transaction history `http://127.0.0.1:8000/transaction-history/orderId`
+
+Admin Login
+<img width="1788" alt="image" src="https://user-images.githubusercontent.com/15151953/198587746-f1558065-7fcc-4d1f-9844-ae068a24f6fc.png">
+
+<img width="1787" alt="image" src="https://user-images.githubusercontent.com/15151953/198588330-d033be02-557b-4adb-b3de-f47d38dd43b1.png">
+
+<img width="1791" alt="image" src="https://user-images.githubusercontent.com/15151953/198588431-8681015e-a7b1-48d4-aacc-2870bcd7c314.png">
+
+User Dashboard
+<img width="1784" alt="image" src="https://user-images.githubusercontent.com/15151953/198588593-448f24da-72fc-4e50-92fb-657446e53827.png">
+
+<img width="1789" alt="image" src="https://user-images.githubusercontent.com/15151953/198588745-6f927819-f7c8-494e-8be3-412a13db8a34.png">
+
+
+
+
