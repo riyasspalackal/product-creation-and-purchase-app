@@ -221,9 +221,7 @@ function deleteProduct() {
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header modal-colored-header bg-primary">
-            <h4 class="modal-title" id="modalForProduct_label">
-              Modal Heading
-            </h4>
+            <h4 class="modal-title" id="modalForProduct_label">Product</h4>
             <button
               type="button"
               class="btn-close"

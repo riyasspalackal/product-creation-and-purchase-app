@@ -118,16 +118,6 @@ function checkValidAmount() {
             Order Logs
           </h2>
         </div>
-        <div class="col-md-6">
-          <button
-            style="float: right"
-            type="button"
-            class="btn btn-outline-primary"
-            @click="addNewProduct"
-          >
-            Add new payment
-          </button>
-        </div>
       </div>
     </template>
 
