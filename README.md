@@ -69,6 +69,9 @@ Admin Login
 <img width="1787" alt="image" src="https://user-images.githubusercontent.com/15151953/198588330-d033be02-557b-4adb-b3de-f47d38dd43b1.png">
 
 <img width="1791" alt="image" src="https://user-images.githubusercontent.com/15151953/198588431-8681015e-a7b1-48d4-aacc-2870bcd7c314.png">
+Transaction history 
+<img width="1792" alt="image" src="https://user-images.githubusercontent.com/15151953/198588931-267090af-0baf-4219-b203-5395c0b93c40.png">
+
 
 User Dashboard
 <img width="1784" alt="image" src="https://user-images.githubusercontent.com/15151953/198588593-448f24da-72fc-4e50-92fb-657446e53827.png">
