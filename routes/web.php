@@ -50,6 +50,5 @@ Route::middleware([
     Route::get('/get-user-orders', 'App\Http\Controllers\OrderController@getOrderByUser')->name('order-list-by-user');
     Route::post('/pay', 'App\Http\Controllers\OrderController@pay')->name('payment');
     Route::get('/get-all-orders', 'App\Http\Controllers\OrderController@getOrders')->name('order-list-by-user');
-    Route::get('/get-all-orders', 'App\Http\Controllers\OrderController@getOrders')->name('order-list-by-user');
-    Route::get('/transaction-history/{transactionId}', 'App\Http\Controllers\OrderController@getTransactionHistory')->name('order-list-by-user');
+    Route::get('/transaction-history/{orderId}', 'App\Http\Controllers\OrderController@getTransactionHistory')->name('order-list-by-user');
 });
