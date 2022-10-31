@@ -3,7 +3,7 @@
 
 
 <p>
-  Hi ,
+  Hi,
 </p>
 
 Welcome!
