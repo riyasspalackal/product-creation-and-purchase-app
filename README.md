@@ -1,4 +1,6 @@
-# PRODUCT CREATION AND PURCHASE APP
+# PRODUCT CREATION AND PURCHASE APP 
+
+Laravel Jetstream VueJS 3 & InertiaJS with SSR Support
 
 #### Following are the Models
 
